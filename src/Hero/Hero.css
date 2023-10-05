@@ -1,0 +1,102 @@
+.hero--title {
+  padding: 15% 3%;
+  
+}
+
+.hero-txt1 {
+    color: #2bbbad;
+    padding-left: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.hero--txt2 {
+    height: 80px;
+    font-size: 100px;
+    margin: 0;
+    line-height: 50px;
+    letter-spacing: 0px;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: 3px ;
+    -webkit-text-stroke-color: whitesmoke;
+    
+    
+}
+
+.hero--txt3 {
+    position: absolute;
+    padding-left: 16%;
+    padding-top: 1.5%;
+    word-spacing: 10px;
+    color: whitesmoke;
+    font-family: cursive;
+}
+
+.hero--txt4 {
+    position: absolute;
+    padding-left: 16%;
+    padding-top: 2.5%;
+    margin-top: 3px;
+    word-spacing: 10px;
+    color: whitesmoke;
+    font-family: cursive;
+}
+
+.hero--txt5 {
+    color: #8DB600;
+    font-weight: 2000;
+    font-size: 50px;
+    letter-spacing: 25px;
+    line-height: 3px;
+    padding-left: 5%;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.p {
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+p {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 300;
+   
+}
+
+.hero--btn--get-started {
+   position: relative;
+   height: 50px;
+   width: 200px;
+   margin-left: 2%;
+   margin-top: 5%;
+   border-radius: 20px;
+   border-color: none;
+   border: 0;
+   /*background-color: rgb(238, 185, 86);*/
+   background-color: #8DB600;
+   font-weight: 900;
+   font-size: 16px;
+   cursor: pointer;
+   
+}
+
+.hero--btn--learn-more {
+    position: relative;
+    height: 50px;
+    width: 200px;
+    margin-left: 2%;
+    margin-top: 5%;
+    border-radius: 20px;
+    border-color: #8DB600;
+    border-width: 1.5px;
+    color: black;
+    /*background-color: rgb(238, 185, 86);*/
+    background-color:whitesmoke ;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}

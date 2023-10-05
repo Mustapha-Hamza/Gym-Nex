@@ -1,0 +1,78 @@
+.Join {
+    background-color:rgb(58, 58, 58) ;
+    padding: 40px 80px;
+    display: flex;
+}
+
+.join--hr {
+    width: 230px;
+    height: 8px;
+    background-color:#2bbbad; 
+    border: none;
+}
+
+.join--head1, .join--head4 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: 3px ;
+    -webkit-text-stroke-color: whitesmoke;
+}
+
+.join--head2 , .join--head3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.right--j {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.email--container {
+    display: flex;
+    gap: 32px;
+    background-color: rgb(82, 81, 81);
+    padding: 16px 32px;
+    border-radius: 20px;
+
+}
+
+.email--container > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(58, 58, 58);
+}
+
+::placeholder {
+    color:rgb(58, 58, 58);
+}
+
+.btn--j {
+    background-color: #2bbbad;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.3s
+}
+
+.btn--j:hover {
+    transform: scale(1.1); 
+}
+
+.btn--j:active {
+    transform: scale(1.2); 
+}
+
+.join-message {
+    font-size: 16px;
+}

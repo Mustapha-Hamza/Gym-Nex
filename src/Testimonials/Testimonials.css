@@ -1,0 +1,99 @@
+.testimonials {
+    display: flex;
+    background-color:rgb(58, 58, 58) ;
+    padding: 50px 80px;
+       
+}
+
+.left-t {
+    flex: 1 1;
+}
+.testimonail--head1 {
+    color: #2bbbad;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.testimonail--head2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 5px;
+    letter-spacing: 10px;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke-width: 3px ;
+    -webkit-text-stroke-color: whitesmoke;
+}
+
+.testimonail--head3 {
+    color: whitesmoke;
+    font-size: 50px;
+    word-spacing: 10px;
+}
+
+
+.review {
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 45px;
+   
+    
+}
+.name {
+   font-size: 15px; 
+   font-weight: 600;
+}
+
+.status {
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+
+.right-t {
+    flex: 1;
+    position: relative;
+    
+}
+
+.right-t>:nth-child(1) {
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    border: 2px solid #2bbbad;
+    background-color: transparent;
+    right: 200px;
+    top: 16px;
+}
+
+.right-t>:nth-child(2) {
+    position: absolute;
+    width: 270px;
+    height: 290px;
+    right: 150px;
+    top: 65px;
+    background: #2bbbad;
+}
+
+.t--images {
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    left: 110px;
+    top: 32px;
+}
+
+
+.arrow {
+   position: relative;
+    color: whitesmoke;
+    font-size: 30px;
+    top: 325px;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
