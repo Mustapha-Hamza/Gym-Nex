@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Programs_Data from '../Data/Programs_Data';
 import './Programs.css';
 import {motion} from 'framer-motion';
@@ -39,8 +40,8 @@ function Programs () {
     const transition = {type: "spring", duration: 3};
 
     return (
-      <frameElement id= "Programs">
-        <div className='programs'>
+      <Fragment >
+        <div className='programs' id= "Programs">
           <span className='programs--head1'>EXPLORE OUR</span>
               <span className='programs--head2'>DIVERSE</span>
               <div>
@@ -58,7 +59,7 @@ function Programs () {
               <motion.div key={card.id} className="p--card"  
               initial="initial"
               animate="animate"
-              whileHover="hover"
+              whileHover="hover"    
               variants={programCard}>
                 <p style ={styles}>{card.imgIcon}</p>
                 <h1 className='card--title'>{card.title}</h1>
@@ -69,7 +70,7 @@ function Programs () {
                 )}
           </div>
         </div>
-        </frameElement>
+        </Fragment>
     )
 }
 export default Programs;

@@ -6,13 +6,14 @@ import fila from '../Assets/fila-icon.png'
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
 import './Reasons.css';
 import {motion} from 'framer-motion'
+import { Fragment } from 'react';
 
 function Reasons ()  {
   const transition = {type: "spring", duration: 3};
 
     return (
-      <frameElement id= "Reasons">
-        <div className='Reasons' id ='reasons'>
+      <Fragment >
+        <div className='Reasons' id ='Reasons'>
           <div className='left-r'> 
             <img src={Grids} alt='Grids'/>
           </div>
@@ -35,6 +36,7 @@ function Reasons ()  {
           initial={{opacity: 0, x: 100}}
           transition={{...transition, duration: 4}}
           whileInView={{opacity: 1, x: 0}}
+          className='partner--icon'
           >
             <span><img className='puma' src={puma} alt='Puma'/></span>
             <span><img className='adidas' src={adidas} alt='Adidas'/></span>
@@ -42,7 +44,7 @@ function Reasons ()  {
           </motion.div>
         </div>
       </div>
-      </frameElement>
+      </Fragment>
     );
   }
 export default Reasons

@@ -102,3 +102,65 @@ li {
     height: 120px;
     padding-left: 10px;
 }
+
+
+/* Media query for Tablet Screen */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .Reasons {
+        padding: 30px 10px; /* Adjusted padding for smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+    .left-r {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+    .partner--head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partner--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .puma, .adidas, .fila {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+
+    }
+}
+
+/* Media query for Mobile  Screen*/
+@media screen and (max-width: 768px) {
+    .Reasons {
+        padding: 30px 10px; /* Adjusted padding for smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+    .left-r {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+    .partner--head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .puma, .adidas, .fila {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+
+    }
+}

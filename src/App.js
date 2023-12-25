@@ -9,6 +9,7 @@ import Footer from './Footer/Footer';
 
 
 import './App.css';
+import { Fragment } from 'react';
 
 
 
@@ -16,14 +17,14 @@ function App() {
  
 
   return (
-    <frameElement>
+    <Fragment>
       <Hero />
       <Programs />
       <Reasons />
       <Plans />
       <Testimonials />
       <Footer />
-    </frameElement>
+    </Fragment>
     
   );
 }

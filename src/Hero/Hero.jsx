@@ -2,6 +2,7 @@ import Header from '../Header/Header';
 import './Hero.css'
 import HeroPic from '../Assets/homepic.jpg'
 import {motion} from 'framer-motion'
+import { Fragment } from 'react';
 
 
 function Hero () {
@@ -57,12 +58,13 @@ function Hero () {
     
       /* Hero------- component ------Function  */
     return (
-      <frameElement id="Hero">
+      <Fragment >
       <Header />
         <motion.div style = {styles}
             variants={containerVariants}
             initial="hidden"
             animate="show" 
+            id="Hero"
         >
          
             <div className = 'hero--title'>
@@ -87,7 +89,7 @@ function Hero () {
                 >Learn More</motion.button>
             </div>
         </motion.div>
-        </frameElement>
+        </Fragment>
     )
       
 }

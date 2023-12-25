@@ -100,3 +100,72 @@ p {
     font-size: 16px;
     cursor: pointer;
 }
+
+/* Media query for Tablet screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero--title {
+        padding: 10% 3%;
+      }
+      .hero--txt2{
+          font-size: 80px;
+      }
+      .hero--txt3,
+      .hero--txt4 {
+        position: absolute;
+        margin-left: 160px;
+        font-size: 15px;
+        padding-left: 0;
+        word-spacing: 0;
+        text-align: center;
+      }
+      .hero--txt4 {
+          margin-top: 10px;
+      }
+      .hero--txt5 {
+          font-size: 40px;
+      }
+      
+    
+      .hero--btn--get-started, 
+      .hero--btn--learn-more {
+        width: 200px;
+        margin-left: 25px;
+        
+      }
+}
+
+/* Media query for Mobile screens */
+@media screen and (max-width: 768px) {
+    .hero--title {
+      padding: 10% 3%;
+    }
+    .hero--txt2{
+        font-size: 80px;
+    }
+    .hero--txt3,
+    .hero--txt4 {
+      position: absolute;
+      margin-left: 160px;
+      font-size: 15px;
+      padding-left: 0;
+      word-spacing: 0;
+      text-align: center;
+    }
+    .hero--txt4 {
+        margin-top: 10px;
+    }
+    .hero--txt5 {
+        font-size: 40px;
+    }
+    
+  
+    .hero--btn--get-started, 
+    .hero--btn--learn-more {
+      width: 200px;
+      margin-left: 25px;
+      
+    }
+    
+  }
+
+  

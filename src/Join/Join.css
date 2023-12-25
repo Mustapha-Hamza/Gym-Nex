@@ -76,3 +76,29 @@
 .join-message {
     font-size: 16px;
 }
+
+/* Media query for Tablet Screen */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .Join {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn--j {
+        width: 100px;
+    }
+}
+
+/* Media query for Mobile Screen */
+@media screen and (max-width: 768px) {
+    .Join {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn--j {
+        width: 100px;
+    }
+}

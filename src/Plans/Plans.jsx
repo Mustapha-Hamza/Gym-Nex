@@ -39,8 +39,8 @@ function Plans() {
     const transition = {type: "spring", duration: 3};
     
     return (
-      <frameElement id="Plans">
-        <div className='plans'>
+      <frameElement >
+        <div className='plans' id="Plans">
             <div className='plans--head'>
               <span className='plans--head1'>PREPARE TO</span>
               <span className='plans--head2'> SOAR!</span>

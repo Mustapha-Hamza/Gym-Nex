@@ -33,10 +33,10 @@ function Medias () {
                 variants={VariantsIcons}
                 initial="hidden"
                 whileInView="show">
-                    <BsTwitter />
-                    <ImFacebook />
-                    <BsInstagram />
-                    <FaLinkedinIn />
+                    <span className="icons"><BsTwitter /></span>
+                    <span className="icons"><ImFacebook /></span>
+                    <span className="icons"><BsInstagram /></span>
+                    <span className="icons"><FaLinkedinIn /></span>
                 </motion.div>
             </div>
             <hr className='media--hr'/>

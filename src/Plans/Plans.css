@@ -94,3 +94,17 @@
     margin-top: 40px;
 }
 
+/* Media query for Tablet Screen */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+/* Media query for Mobile Screen */
+@media  screen and (max-width: 768px) {
+    .plans--Card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+  }

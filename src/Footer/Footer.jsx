@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { Fragment, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { PiTrademarkRegisteredFill } from 'react-icons/pi';
 import './Footer.css';
@@ -64,8 +64,8 @@ function Footer () {
           );
       };
     return ( 
-        <frameElement id="Footer">
-        <div>
+        <Fragment >
+        <div id="Footer">
             <div className='footer'>
                 <div id= "main--title"  className='left--f'>
                     <motion.h1
@@ -145,7 +145,7 @@ function Footer () {
            
         </div>
         <Medias />
-        </frameElement>
+        </Fragment>
     )
 }
 export default Footer;

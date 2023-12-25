@@ -1,4 +1,4 @@
-import { useState } from 'react'; // Import useState
+import { Fragment, useState } from 'react'; // Import useState
 import './Testimonials.css'
 import Join from '../Join/Join';
 import Testimonials_Data from '../Data/Testimonials_Data'
@@ -22,8 +22,8 @@ import {motion} from "framer-motion";
 
     
     return (
-        <frameElement id="Testimonials">
-        <div className=" testimonials">
+        <Fragment>
+        <div className=" testimonials"  id='Testimonials'>
             <div className='left-t'>
                 <h2 className='testimonail--head1'>TESTIMONIALS</h2>
                 <h1 className='testimonail--head2'>WHAT THEY</h1>
@@ -65,7 +65,7 @@ import {motion} from "framer-motion";
 
         </div>
         <Join />
-        </frameElement>
+        </Fragment>
 
     )
  }

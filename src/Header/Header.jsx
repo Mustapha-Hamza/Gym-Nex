@@ -1,39 +1,26 @@
+import React, { useState, useEffect } from 'react';
 import './Header.css';
+import { LuMenu } from "react-icons/lu";
+import { Link } from 'react-scroll';
 
 function Header() {
-  const scrollToComponent = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      // Get the current scroll position
-      const currentPosition = window.scrollY;
+  const [showMenu, setShowMenu] = useState(false);
+  const [mobile, setMobile] = useState(window.innerWidth <= 768);
 
-      // Calculate the target scroll position
-      const targetPosition = element.getBoundingClientRect().top + currentPosition;
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 768);
+    };
 
-      // Scroll to the target position
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth',
-      });
+    window.addEventListener('resize', handleResize);
 
-      // Listen for scroll events to check when we've reached the target position
-      const checkScrollPosition = () => {
-        const currentScroll = window.scrollY;
-
-        // Check if we're close to the target position
-        if (Math.abs(currentScroll - targetPosition) < 10) {
-          // Remove the scroll listener
-          window.removeEventListener('scroll', checkScrollPosition);
-        }
-      };
-
-      // Add a scroll listener to check the position
-      window.addEventListener('scroll', checkScrollPosition);
-    }
-  };
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <div className="main--header">
+    <div className="main--header" id='Home'>
       <div className="main--title">
         <h1>
           GYM-<span className="name--NEX">NE</span>
@@ -41,16 +28,21 @@ function Header() {
         </h1>
         <h4>FITNESS CENTER</h4>
       </div>
-      <nav>
-        <ul className="main--nav">
-          <li onClick={() => scrollToComponent('Hero')}>Home</li>
-          <li onClick={() => scrollToComponent('Programs')}>Programs</li>
-          <li onClick={() => scrollToComponent('Reasons')}>Why Us</li>
-          <li onClick={() => scrollToComponent('Plans')}>Plans</li>
-          <li onClick={() => scrollToComponent('Testimonials')}>Testimonials</li>
-          <li onClick={() => scrollToComponent('Footer')}>Contact</li>
-        </ul>
-      </nav>
+      
+      {showMenu === false && mobile === true ? (
+        <LuMenu className='menu--icon' onClick={() => setShowMenu(!showMenu)} />
+      ) : (
+        <nav>
+          <ul className="main--nav">
+            <li><Link onClick={() => setShowMenu(false)} activeClass='active' to='Home' spy={true} smooth={true} duration={500}>Home</Link></li>
+            <li><Link onClick={() => setShowMenu(false)} to='Programs' spy={true} smooth={true} duration={500}>Programs</Link></li>
+            <li><Link onClick={() => setShowMenu(false)} to='Reasons' spy={true} smooth={true} duration={500}>Why Us</Link></li>
+            <li><Link onClick={() => setShowMenu(false)} to='Plans' spy={true} smooth={true} duration={500}>Plans</Link></li>
+            <li><Link onClick={() => setShowMenu(false)} to='Testimonials' spy={true} smooth={true} duration={500}>Testimonials</Link></li>
+            <li><Link onClick={() => setShowMenu(false)} to='Footer' spy={true} smooth={true} duration={500}>Contact</Link></li>
+          </ul>
+        </nav>
+      )}
     </div>
   );
 }
