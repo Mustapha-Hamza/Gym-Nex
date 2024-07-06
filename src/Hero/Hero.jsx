@@ -9,9 +9,10 @@ function Hero () {
     /* CSS styled component*/
     const styles = {
         backgroundImage: `url(${HeroPic})`,
-        height: '95vh',
-        backgroundSize: 'cover ',
-        backgroundRepeat: 'no-repeat'
+        height: '90vh',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        objectFit: 'cover'
     }
 
     /* Framer- motion component */
