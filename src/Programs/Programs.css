@@ -118,12 +118,13 @@
 
 
 /* Media query for Mobile screens */
-@media screen and  (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .programs--head1, .programs--head2, 
   .programs--head3, .programs--head4 {
     display: inline-block;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
     
   }
   
@@ -140,4 +141,23 @@
   .card--footer {
     width: 100%; /* Make the footer buttons full width on smaller screens */
   }
+}
+
+/* Media query for Tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+/* Media query for Laptop screens */
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+
+}
+
+
+/* Media query for desktop screens */
+@media (min-width: 1200px) {
+  
 }

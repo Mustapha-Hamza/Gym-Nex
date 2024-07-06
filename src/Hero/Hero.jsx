@@ -12,7 +12,7 @@ function Hero () {
         height: '90vh',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        objectFit: 'cover'
+        
     }
 
     /* Framer- motion component */
