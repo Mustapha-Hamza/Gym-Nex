@@ -34,7 +34,7 @@
   color: #8DB600;
   font-size: 45px;
   font-weight: 1000;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Times New Roman', serif;
   
 }
 
@@ -91,29 +91,8 @@
   display: none;
 }
 
-/* Media query for tablet screens */
-@media screen and (min-width: 769px) and (max-width: 1024px){
-  .main--title > h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .main--nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    margin-left: 45px;
-    
-  }
-  .main--nav >li {
-    margin: 0 8px;
-    
-  }
-}
-
 /* Media query for mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 578px) {
   
   .main--title > h1 {
     display: flex;
@@ -152,3 +131,47 @@
 
 }
 
+
+
+/* Media query for tablet screens */
+@media screen and (max-width: 768px) {
+  .main--title > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu--icon {
+    display: flex;
+    margin-left: 100px;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    background-color: #2bbbad;
+    border-radius: 5px;
+  }
+
+  .main--nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 45px;
+    
+  }
+  .main--nav >li {
+    margin: 0 8px;
+    
+  }
+}
+
+/* Media query for laptop screens */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Media query for desktop screens */
+@media screen and (max-width: 1200px) {
+
+}
