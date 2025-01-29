@@ -48,6 +48,7 @@
   align-items: center;
   gap: 2rem;
   margin-top: 3.5rem;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
@@ -101,7 +102,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5rem;
-    margin: 0 12rem;
+    margin: 0 auto;
   }
 
   .p--card {
@@ -133,7 +134,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5rem;
-    margin: 0 12rem;
+    margin: 0 auto;
   }
 
   .p--card {
@@ -159,14 +160,12 @@
   }
 
   .programs--card {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
     gap: 2.2rem;
-    margin: 0 12rem;
+    margin: 0 auto;
   }
 
   .p--card {
@@ -195,20 +194,23 @@
   }
 
   .programs--card {
-    display: grid;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 0.8rem;
-    margin: 0 10rem;
+    gap: 0.5rem;
+    margin: 0 auto;
   }
 
   .p--card {
-    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 14rem;
+    gap: 0.5rem;
   }
   .card--footer {
-    width: 7rem;
+    width: 10rem;
   }
 }

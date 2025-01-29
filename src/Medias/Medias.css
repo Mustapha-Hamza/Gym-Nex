@@ -1,70 +1,70 @@
 .media {
-    padding: 10px 90px;
-    background-color: #036158;
+  padding: 10px 90px;
+  background-color: #036158;
 }
 
 .media--hr {
-    background-color: silver;
-    width: 100%;
-    border: none;
-    height: 1px;
+  background-color: silver;
+  width: 100%;
+  border: none;
+  height: 1px;
 }
 
 .media--footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
 }
 .media--footer p {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 .media--icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 30px;
-    color: whitesmoke;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  color: whitesmoke;
+  gap: 30px;
 }
 
 .icons {
-    cursor: pointer;
-    transition: transform 0.3s
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 .icons:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .footer--footer {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 40px;
-    text-align: center;
-    font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px;
+  text-align: center;
+  font-weight: 400;
 }
 
 /* Media query for Tablet Screen */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
 }
 
 /* Media query for Mobile Screen */
 @media screen and (max-width: 768px) {
-    .media--footer {
-        flex-direction: column;
-    }
-    .media--footer > p {
-        position: absolute;
-        margin-top: 50px;
-    }
-    .footer--footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-    }
+  .media--footer {
+    flex-direction: column;
+  }
+  .media--footer > p {
+    position: absolute;
+    margin-top: 50px;
+  }
+  .footer--footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 9px;
+  }
 }

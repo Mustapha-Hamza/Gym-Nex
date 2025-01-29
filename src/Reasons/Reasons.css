@@ -192,8 +192,7 @@ li {
     height: 32rem;
     object-fit: contain;
   }
-
-  .right-r {
+  z .right-r {
     width: 25rem;
   }
 
@@ -207,6 +206,10 @@ li {
 
   .right--head--why {
     font-size: 4rem;
+  }
+
+  .h5--reasons ul {
+    font-size: 1rem;
   }
   .partner--head {
     display: flex;
@@ -241,7 +244,7 @@ li {
   }
 
   .left-r img {
-    width: 22rem;
+    width: 18rem;
     height: 32rem;
     object-fit: contain;
   }
@@ -282,64 +285,3 @@ li {
     height: 5rem;
   }
 }
-
-/* Media query for Tablet Screen */
-/* @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .Reasons {
-        padding: 30px 10px; 
-        display: flex;
-        flex-direction: column;
-    }
-    .left-r {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 10px;
-    }
-    .partner--head {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .partner--icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-    .puma, .adidas, .fila {
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        margin-left: 25px;
-
-    }
-} */
-
-/* Media query for Mobile  Screen*/
-/* @media screen and (max-width: 768px) {
-    .Reasons {
-        padding: 30px 10px; 
-        display: flex;
-        flex-direction: column;
-    }
-    .left-r {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 10px;
-    }
-    .partner--head {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .puma, .adidas, .fila {
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        margin-left: 25px;
-
-    }
-} */

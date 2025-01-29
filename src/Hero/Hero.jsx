@@ -8,7 +8,8 @@ function Hero() {
   /* CSS styled component*/
   const styles = {
     backgroundImage: `url(${HeroPic})`,
-    height: "90vh",
+    height: "auto",
+    width: "auto",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",

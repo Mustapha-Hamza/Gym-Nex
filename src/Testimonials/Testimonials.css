@@ -112,7 +112,6 @@
   }
   .review {
     font-size: 1rem;
-    display: inline-block;
   }
 
   .name {
@@ -225,13 +224,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
   }
 
+  .testimonail--head1 {
+    margin-left: 2rem;
+  }
   .testimonail--head2,
   .testimonail--head3 {
     font-size: 2.5rem;
     line-height: 2rem;
-    display: inline-block;
+    margin-left: 2rem;
   }
   .left-t > :nth-child(2),
   .left-t > :nth-child(3) {
@@ -239,13 +242,18 @@
   }
 
   .review {
-    font-size: 0.7rem;
-    width: 100%;
-    line-height: 1rem;
-  }
-
-  .name {
     font-size: 1rem;
+    width: 90%;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
     font-weight: 600;
   }
 
@@ -253,6 +261,10 @@
     color: whitesmoke;
     font-weight: 600;
     letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
   }
   .right-t {
     position: relative;
@@ -277,7 +289,30 @@
   }
 
   .arrow {
-    top: 25rem;
+    top: 18rem;
     right: 2rem;
+  }
+}
+
+/* Media query for Mobile Screen */
+@media screen and (max-width: 576px) {
+  .right-t {
+    margin-left: -2rem;
+  }
+  .right-t > div:nth-child(1),
+  .right-t > div:nth-child(2) {
+    width: 14rem;
+    height: 17rem;
+  }
+  .right-t > div:nth-child(2) {
+    top: -14rem;
+  }
+  .right-t > img {
+    width: 14rem;
+    height: 17rem;
+  }
+
+  .arrow {
+    top: 20rem;
   }
 }

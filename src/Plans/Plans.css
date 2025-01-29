@@ -182,16 +182,10 @@
   }
 
   .card {
-    width: 22rem;
-  }
-}
-
-/* Media query for Mobile Screen */
-/* @media screen and (max-width: 768px) {
-  .plans--Card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 20rem;
   }
-} */
+}
