@@ -197,19 +197,20 @@ li {
   }
 
   .right--head--1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .right--head--2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .right--head--why {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
-  .h5--reasons ul {
-    font-size: 1rem;
+  .h5--reasons ul li {
+    font-size: 0.9rem;
+    line-height: 1px;
   }
   .partner--head {
     display: flex;

@@ -158,6 +158,11 @@
     flex-direction: column;
   }
 
+  .testimonail--head1 {
+    margin-left: 2rem;
+    padding-bottom: 10px;
+  }
+
   .testimonail--head2,
   .testimonail--head3 {
     font-size: 2.5rem;
@@ -229,6 +234,7 @@
 
   .testimonail--head1 {
     margin-left: 2rem;
+    padding-bottom: 10px;
   }
   .testimonail--head2,
   .testimonail--head3 {
