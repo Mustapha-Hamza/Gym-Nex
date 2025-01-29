@@ -125,6 +125,9 @@ p {
   .hero--title {
     margin-top: 12.5rem;
   }
+  .hero--txt2 {
+    font-size: 6rem;
+  }
 }
 
 /* Media query for mobile screens */
@@ -141,11 +144,11 @@ p {
   }
   .hero--txt3 {
     font-size: 0.6rem;
-    margin-left: 11rem;
+    margin-left: 12rem;
   }
   .hero--txt4 {
     font-size: 0.6rem;
-    margin-left: 11rem;
+    margin-left: 12rem;
   }
   .hero--txt5 {
     font-size: 2rem;
